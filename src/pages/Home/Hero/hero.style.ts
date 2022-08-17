@@ -17,9 +17,9 @@ export const HeroWrapper = styled.div`
 `
 export const HeroText = styled.p`
   color: var(--clr-white);
-  margin: 12px 0 52px 0;
+  font-family: var(--ff-montserrat);
   font-size: 24px;
   font-weight: var(--fw-500);
-  font-family: var(--ff-montserrat);
+  margin: 12px 0 52px 0;
   width: 371px;  
 `

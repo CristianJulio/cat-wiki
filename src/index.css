@@ -1,6 +1,8 @@
 :root {
   --clr-black: #050709;
   --clr-white: #fff;
+  --clr-caffe: #291507;
+  --clr-ligh-caffe: #E3E1DC;
 
   --ff-montserrat: 'Montserrat', sans-serif;
   --ff-mystery: 'Mystery Quest', cursive;
@@ -8,7 +10,7 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
-  --fw-600: 700;
+  --fw-700: 700;
 }
 
 * {
