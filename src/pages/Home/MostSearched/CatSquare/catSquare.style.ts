@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const CatSquareWrapper = styled.a`
+export const CatSquareWrapper = styled(Link)`
   text-decoration: none;
 `
 export const CatImage = styled.img`
