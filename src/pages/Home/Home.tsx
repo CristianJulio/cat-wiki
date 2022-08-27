@@ -9,7 +9,6 @@ const Home = () => {
       <Hero />
       <MostSearched />
       <Advantages />
-      <Footer />
     </>
   )
 }

@@ -2,7 +2,6 @@ import Home from "../pages/Home/Home";
 import Info from "../pages/Info/Info";
 
 export const HOME = "/"
-export const INFO = "/info"
 
 export const routes = [
   {
@@ -10,7 +9,7 @@ export const routes = [
     element: <Home />
   },
   {
-    path: `${INFO}/:breed`,
+    path: `/:breed`,
     element: <Info />
   },
 ]

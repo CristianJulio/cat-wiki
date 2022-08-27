@@ -48,8 +48,15 @@ export interface IBreed {
   weight: IBreedWeight;
   wikipedia_url: string;
 }
-
+export interface IBreedInfo {
+  breeds: IBreed[];
+  height: 0;
+  id: string;
+  url: string;
+  width: 0;
+}
 export interface IBreedState {
   isLoading: boolean;
   breeds: IBreed[];
+  breedInfo: IBreedInfo[]
 }
