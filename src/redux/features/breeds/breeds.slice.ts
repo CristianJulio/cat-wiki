@@ -14,7 +14,11 @@ const breedSlice = createSlice({
     builder
       .addCase(getCatsBreeds.pending, (state) => { state.isLoading = true })
       .addCase(getCatsBreeds.fulfilled, (state, { payload }: PayloadAction<IBreed[]>) => {
-        state.breeds = payload
+        state.breeds = payload.slice(0, 4)
+        state.breedsList = payload.map((breed) => ({
+          name: breed.name,
+          id: breed.id
+        }))
         state.isLoading = false
       })
       .addCase(getCatsBreeds.rejected, (state) => { state.isLoading = false })
@@ -30,6 +34,7 @@ const breedSlice = createSlice({
 
 export const getBreeds = (store: RootState) => store.breeds.breeds
 export const getBreedInfo = (store: RootState) => store.breeds.breedInfo
+export const getBreedsList = (store: RootState) => store.breeds.breedsList
 
 export const { resetBreedInfo } = breedSlice.actions
 export default breedSlice.reducer

@@ -1,5 +1,5 @@
 import { AppDispatch } from '../../redux/store/store'
-import { getCatInfoByBreed, getFavorites } from '../../services/breeds/breeds.service'
+import { getCatInfoByBreed } from '../../services/breeds/breeds.service'
 import { resetBreedInfo } from '../../redux/features/breeds/breeds.slice'
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
@@ -13,7 +13,6 @@ const Info = () => {
 
   useEffect(() => {
     dispatch(getCatInfoByBreed(breed!))
-    dispatch(getFavorites())
 
     return (() => { dispatch(resetBreedInfo()) })
   }, [])

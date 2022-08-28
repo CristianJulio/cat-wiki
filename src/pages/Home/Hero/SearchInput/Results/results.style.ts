@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const ResultsWrapper = styled.div`
   background-color: var(--clr-white);
   border-radius: 24px;
-  bottom: -240px;
   display: block;
+  margin-top: 17px;
   padding: 0 11px 0 11px;
   position: absolute;
   width: 100%;
   z-index: 100;
 `
 export const ItemsWrapper = styled.ul`
-  height: 220px;
   list-style-type: none;
+  max-height: 220px;
   overflow: auto;
   padding: 11px 0 11px 0;
 
@@ -43,5 +43,12 @@ export const Item = styled.li`
 
   :hover {
     background-color: #9797971A;
+  }
+
+  a {
+    color: var(--clr-black);
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
   }
 `

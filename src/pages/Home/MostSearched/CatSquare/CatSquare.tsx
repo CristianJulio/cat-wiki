@@ -8,9 +8,9 @@ interface CatSquareProps {
 const CatSquare = ({ breed }: CatSquareProps) => {
 
   return (
-    <SC.CatSquareWrapper to={breed.id}>
-      <SC.CatImage src={breed.image.url} alt="" />
-      <SC.CatBreed>{breed.name}</SC.CatBreed>
+    <SC.CatSquareWrapper to={breed?.id}>
+      <SC.CatImage src={breed?.image?.url} alt="" />
+      <SC.CatBreed>{breed?.name}</SC.CatBreed>
     </SC.CatSquareWrapper>
   )
 }

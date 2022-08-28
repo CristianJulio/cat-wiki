@@ -1,20 +1,24 @@
+import { IBreedResult } from '../../../../../redux/features/breeds/interfaces'
+import { Link } from 'react-router-dom'
 import * as SC from './results.style'
 
-const Results = () => {
+interface ResultsProps {
+  filteredBreeds: IBreedResult[]
+}
+
+const Results = ({ filteredBreeds }: ResultsProps) => {
   return (
     <SC.ResultsWrapper>
       <SC.ItemsWrapper>
-        <SC.Item>Item 1</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
-        <SC.Item>Item</SC.Item>
+        {
+          filteredBreeds.length
+            ? filteredBreeds.map((item) => (
+              <SC.Item key={item?.id}>
+                <Link to={item?.id}>{item?.name}</Link>
+              </SC.Item>
+            ))
+            : <SC.Item>No hay resultados...</SC.Item>
+        }
       </SC.ItemsWrapper>
     </SC.ResultsWrapper>
   )

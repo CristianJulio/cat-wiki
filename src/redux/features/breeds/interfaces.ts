@@ -55,8 +55,13 @@ export interface IBreedInfo {
   url: string;
   width: 0;
 }
+export interface IBreedResult {
+  name: string;
+  id: string;
+}
 export interface IBreedState {
   isLoading: boolean;
   breeds: IBreed[];
-  breedInfo: IBreedInfo[]
+  breedInfo: IBreedInfo[],
+  breedsList: IBreedResult[]
 }
