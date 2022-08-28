@@ -18,3 +18,11 @@ export const getCatInfoByBreed = createAsyncThunk(
     return data
   }
 )
+export const getFavorites = createAsyncThunk(
+  "breeds/getFavorites",
+  async () => {
+    const url = `https://api.thecatapi.com/v1/favourites`
+    const response = await rest.get(url)
+    console.log(response)
+  }
+)

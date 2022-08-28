@@ -5,6 +5,20 @@ export const BasicInfoWrapper = styled.section`
   gap: 115px;
   margin-top: 49px;
 `
+export const ImageWrapper = styled.div`
+  position: relative;
+
+  ::before {
+      content: '';
+      background-color: var(--clr-yellow);
+      border-radius: 14px 0 0 14px;
+      height: 305px;
+      left: -14px;
+      position: absolute;
+      top: 31px;
+      width: 14px;
+  }
+`
 export const BreedImg = styled.img`
   border-radius: 24px;
   height: 371px;

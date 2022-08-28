@@ -8,7 +8,9 @@ const BasicInfo = () => {
 
   return (
     <SC.BasicInfoWrapper>
-      <SC.BreedImg src={catInfo[0]?.url} alt="" />
+      <SC.ImageWrapper>
+        <SC.BreedImg src={catInfo[0]?.url} alt="" />
+      </SC.ImageWrapper>
       <div>
         <SC.Name>{catInfo[0]?.breeds[0]?.name}</SC.Name>
         <SC.Description>{catInfo[0]?.breeds[0]?.description}</SC.Description>
