@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const CommonLinkStyled = styled.a`
+export const CommonLinkStyled = styled(Link)`
   align-items: center;
   color: rgba(41, 21, 7, 0.6);
   display: flex;

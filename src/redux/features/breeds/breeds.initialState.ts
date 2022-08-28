@@ -4,5 +4,6 @@ export const breedsInitialState: IBreedState = {
   isLoading: false,
   breeds: [],
   breedInfo: [],
-  breedsList: []
+  breedsList: [],
+  top10: []
 }

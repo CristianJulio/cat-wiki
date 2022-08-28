@@ -1,6 +1,6 @@
+import { HOME } from '../../routes/routes'
 import * as SC from './header.style'
 import MainLogo from '../../assets/logos/MainLogo'
-import { HOME } from '../../routes/routes'
 
 const Header = () => {
   return (

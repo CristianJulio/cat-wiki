@@ -1,7 +1,9 @@
 import Home from "../pages/Home/Home";
 import Info from "../pages/Info/Info";
+import MostSearched from "../pages/MostSearched/MostSearched";
 
 export const HOME = "/"
+export const MOST = "/top"
 
 export const routes = [
   {
@@ -11,5 +13,9 @@ export const routes = [
   {
     path: `/:breed`,
     element: <Info />
+  },
+  {
+    path: MOST,
+    element: <MostSearched />
   },
 ]

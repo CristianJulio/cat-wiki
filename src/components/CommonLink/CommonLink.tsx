@@ -7,7 +7,7 @@ interface CommonLinkProps {
 
 const CommonLink = ({ children, to }: CommonLinkProps) => {
   return (
-    <SC.CommonLinkStyled href={to}>{children}</SC.CommonLinkStyled>
+    <SC.CommonLinkStyled to={to}>{children}</SC.CommonLinkStyled>
   )
 }
 

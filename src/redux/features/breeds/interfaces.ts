@@ -63,5 +63,6 @@ export interface IBreedState {
   isLoading: boolean;
   breeds: IBreed[];
   breedInfo: IBreedInfo[],
-  breedsList: IBreedResult[]
+  breedsList: IBreedResult[],
+  top10: IBreed[]
 }

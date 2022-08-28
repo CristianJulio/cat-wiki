@@ -19,6 +19,7 @@ const breedSlice = createSlice({
           name: breed.name,
           id: breed.id
         }))
+        state.top10 = payload.slice(0, 10)
         state.isLoading = false
       })
       .addCase(getCatsBreeds.rejected, (state) => { state.isLoading = false })
@@ -35,6 +36,7 @@ const breedSlice = createSlice({
 export const getBreeds = (store: RootState) => store.breeds.breeds
 export const getBreedInfo = (store: RootState) => store.breeds.breedInfo
 export const getBreedsList = (store: RootState) => store.breeds.breedsList
+export const getTop10 = (store: RootState) => store.breeds.top10
 
 export const { resetBreedInfo } = breedSlice.actions
 export default breedSlice.reducer
