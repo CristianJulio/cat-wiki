@@ -6,11 +6,20 @@ export const PhostosWrapper = styled.div`
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 177px;
 `
+export const ImageWrapper = styled.div`
+  overflow: hidden;
+  border-radius: 24px;
+`
 export const Img = styled.img`
   border-radius: 24px;
   height: 278px;
   object-fit: cover;
+  transition: transform .3s;
   width: 278px;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `
 export const Title = styled.h4`
   color: var(--clr-cafe);

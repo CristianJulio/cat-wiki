@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <SC.FooterWrapper>
       <MainLogo color='var(--clr-white)' />
-      <SC.Content>&copy; created by <span>CristianJulio</span> - devChanllenge.io  2022</SC.Content>
+      <SC.Content>&copy; created by <a href='https://github.com/CristianJulio'>CristianJulio</a> - devChanllenge.io  2022</SC.Content>
     </SC.FooterWrapper>
   )
 }

@@ -11,7 +11,9 @@ const Photos = () => {
       <SC.PhostosWrapper>
         {
           catInfo.map((item) => (
-            <SC.Img key={item.id} src={item.url} alt="" />
+            <SC.ImageWrapper>
+              <SC.Img key={item.id} src={item.url} alt="" />
+            </SC.ImageWrapper>
           ))
         }
       </SC.PhostosWrapper>

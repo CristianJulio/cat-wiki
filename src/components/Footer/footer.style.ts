@@ -16,8 +16,9 @@ export const Content = styled.p`
   font-weight: var(--fw-400);
   line-height: 20px;
 
-  span {
+  a {
     font-weight: var(--fw-700);
     text-decoration: underline;
+    color: var(--clr-white);
   }
 `
